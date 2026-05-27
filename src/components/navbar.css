@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+.header {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgb(146, 185, 189);
+}
+
+.header .navbar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    color: black;
+    font-family: Montserrat, Arial, serif, monospace;
+    font-weight: 500;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bg {
+    background-color: rgb(146, 185, 189);
+}
+
+.title {
+    margin: 25px;
+    font-family: 'Monoton', cursive;
+    font-weight: 500;
+    font-size: xx-large;
+    letter-spacing: 10px;
+}
+
+.ul-list {
+    display: flex;
+    list-style: none;
+    margin-right: 10px;
+}
+
+.navitem {
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+    cursor: pointer;
+}
+
+.navitem:hover {
+    color: rgb(143, 64, 30);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        height: auto;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .ul-list {
+        display: none; /* Hide the list items */
+    }
+
+    .menu-btn {
+        display: flex; /* Show the menu button */
+    }
+
+    .navbar {
+        justify-content: space-between; /* Ensure the title and menu button are on opposite ends */
+    }
+}

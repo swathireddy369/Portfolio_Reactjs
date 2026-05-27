@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/* General Styles */
+.cont {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(146, 185, 189);
+    margin-top: 4%;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.ima {
+    margin: 2%;
+    margin-top: 30px;
+    height: 375px;
+    width: 375px;
+    background-image: url(../img/profile.jpg);
+    background-size: cover;
+    background-position: center top;
+    border-radius: 50%;
+    background-color: white;
+    flex-shrink: 0;
+}
+
+.name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px; /* Use standard font size */
+    letter-spacing: 8px;
+    margin: 8%;
+    margin-top: 10%;
+    color: rgb(53, 53, 53);
+    margin-bottom: 4%;
+}
+
+.titles {
+    letter-spacing: 7px;
+    margin: 8%;
+    margin-top: 0.6%;
+    font-size: x-large;
+    margin-bottom: 4%;
+}
+
+.one {
+    margin: 8%;
+    margin-top: 0.6%;
+    letter-spacing: 3px;
+    font-size: large;
+    margin-bottom: 4%;
+    font-weight: 700;
+}
+
+.resume {
+    margin-left: 8%;
+    margin-top: 0.6%;
+    padding: 5px;
+    border: 2px solid black;
+    width: 120px;
+    text-align: center;
+    transition: 0.8s;
+    border-radius: 4px;
+    background-color: lavender;
+    color: black;
+    font-size: 20px;
+    margin-top: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
+
+.resume:hover {
+    background-color: black;
+    color: white;
+    padding: 7px;
+    transform: scale(1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .ima {
+        height: 300px;
+        width: 300px;
+        margin-top: 20px;
+    }
+
+    .name {
+        font-size: 50px;
+        margin-top: 5%;
+    }
+
+    .titles, .one, .resume {
+        margin-left: 0;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .ima {
+        height: 250px;
+        width: 250px;
+        margin-top: 15px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .titles {
+        font-size: large;
+    }
+
+    .one {
+        font-size: medium;
+    }
+
+    .resume {
+        font-size: 18px;
+        width: 100px;
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        padding: 5px;
+    }
+
+    .ima {
+        height: 200px;
+        width: 200px;
+        margin-top: 10px;
+    }
+
+    .name {
+        font-size: 30px;
+    }
+
+    .titles {
+        font-size: medium;
+        letter-spacing: 5px;
+    }
+
+    .one {
+        font-size: small;
+        letter-spacing: 2px;
+    }
+
+    .resume {
+        font-size: 16px;
+        width: 90px;
+        padding: 4px;
+        margin-top: 5%;
+        margin: 0 auto;
+    }
+}

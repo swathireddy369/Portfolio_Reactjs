@@ -1,0 +1,112 @@
+.projects {
+  font-family: sans-serif;
+  letter-spacing: 1.5px;
+}
+
+.projectCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 10px;
+  padding: 20px 50px;
+  margin: 20px;
+}
+
+.project {
+  border-radius: 5px;
+  padding: 15px;
+  margin: 15px;
+  color: black;
+}
+
+.head h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.project ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0px;
+  line-height: 20px;
+}
+
+.project li {
+  padding: 5px;
+  position: relative;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.project:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
+  border: 3px solid transparent;
+}
+
+.project p {
+  margin-top: 0;
+}
+
+.head h2 .logo {
+  margin-left: 10px;
+  float: right;
+  font-size: 18px;
+}
+
+.head h2 .logo a {
+  color: #333;
+  text-decoration: none;
+}
+
+.head h2 .logo a:hover {
+  color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .projectCard {
+      padding: 20px;
+  }
+
+  .project {
+      margin: 10px;
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      padding: 15px;
+  }
+
+  .project {
+      margin: 8px;
+      padding: 8px;
+  }
+
+  .head h2 {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .projectCard {
+      grid-template-columns: 1fr;
+      padding: 10px;
+  }
+
+  .project {
+      margin: 5px;
+      padding: 5px;
+  }
+
+  .head h2 {
+      font-size: 16px;
+  }
+
+  .project li {
+      font-size: smaller;
+  }
+}

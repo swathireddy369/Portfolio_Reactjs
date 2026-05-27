@@ -1,0 +1,52 @@
+/* General Styles for Icon with Label */
+.icon-with-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.icon-label {
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: 100;
+  color: black; /* You can change this color as needed */
+}
+
+.icon-image {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .icon-with-label {
+    margin: 5px; /* Reduce margin for smaller screens */
+  }
+
+  .icon-label {
+    font-size: 11px; /* Adjust font size for smaller screens */
+  }
+
+  .icon-image {
+    width: 40px; /* Adjust icon size for smaller screens */
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-with-label {
+    margin: 3px; /* Further reduce margin for extra small screens */
+  }
+
+  .icon-label {
+    font-size: 10px; /* Further adjust font size for extra small screens */
+  }
+
+  .icon-image {
+    width: 35px; /* Further adjust icon size for extra small screens */
+    height: 35px;
+  }
+}

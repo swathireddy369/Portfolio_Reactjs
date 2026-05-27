@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.skil {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1.5px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leftCard {
+    text-align: left;
+    padding: 50px 100px;
+    font-weight: 400;
+    margin: 4%;
+    margin-right: 4%;
+    background-color: rgb(146, 185, 189);
+    color: white;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.07),
+                0 2px 4px rgba(0, 0, 0, 0.07),
+                0 4px 8px rgba(0, 0, 0, 0.07),
+                0 8px 16px rgba(0, 0, 0, 0.07),
+                0 16px 32px rgba(0, 0, 0, 0.07),
+                0 32px 64px rgba(0, 0, 0, 0.07);
+}
+
+.leftCard p {
+    font-size: 13pt;
+    font-weight: 400;
+    font-family: sans-serif;
+    opacity: 0.9;
+    margin-bottom: 1.25rem;
+    color: black;
+}
+
+.leftCard p a u {
+    color: blueviolet;
+}
+
+.rightCard {
+    text-align: right;
+    padding: 20px 50px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .leftCard {
+        padding: 40px 80px;
+        margin: 4%;
+    }
+
+    .rightCard {
+        padding: 15px 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .leftCard {
+        text-align: center;
+        padding: 30px 60px;
+        margin: 2%;
+    }
+
+    .rightCard {
+        text-align: center;
+        padding: 10px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .leftCard {
+        text-align: center;
+        padding: 20px 40px;
+        margin: 2%;
+    }
+
+    .leftCard p {
+        font-size: 12pt;
+    }
+
+    .rightCard {
+        text-align: center;
+        padding: 10px 20px;
+    }
+}

@@ -1,0 +1,172 @@
+/* General Experience Styles */
+.experience {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  font-family: sans-serif;
+  font-weight: 400;
+  margin: 4%;
+  background-color: rgb(146, 185, 189);
+  color: black;
+  border-radius: 30px;
+  padding: 40px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+              0 2px 4px rgba(0,0,0,0.07), 
+              0 4px 8px rgba(0,0,0,0.07), 
+              0 8px 16px rgba(0,0,0,0.07),
+              0 16px 32px rgba(0,0,0,0.07), 
+              0 32px 64px rgba(0,0,0,0.07);
+}
+
+.sidebar {
+  flex: 1;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  font-family: sans-serif;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+  color: #333;
+}
+
+.sidebar li.active {
+  background-color: #f9f9f9;
+  color: rgb(146, 185, 189);
+  border-left: 3px solid rgb(146, 185, 189);
+}
+
+.details {
+  flex: 3;
+  padding: 20px;
+}
+
+.card1 {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: #fff;
+}
+
+.title1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.duration {
+  color: #777;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+
+.company1 a {
+  color: rgb(146, 185, 189);
+}
+
+.company1 a:hover {
+  color: white;
+  background-color: rgb(146, 185, 189);
+  padding: 10px;
+}
+
+.company-logo {
+  display: flex;
+  float: right;
+  width: 50px;
+  height: 38px;
+  vertical-align: middle;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .experience {
+      flex-direction: column;
+      padding: 30px;
+  }
+
+  .sidebar {
+      border-right: none;
+      border-bottom: 1px solid #e0e0e0;
+      margin-bottom: 20px;
+  }
+
+  .details {
+      padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .experience {
+      margin: 2%;
+      padding: 20px;
+  }
+
+  .sidebar li {
+      padding: 8px;
+      font-size: 14px;
+  }
+
+  .title1 {
+      font-size: 16px;
+  }
+
+  .duration {
+      font-size: 12px;
+  }
+
+  .card1 {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience {
+      margin: 1%;
+      padding: 10px;
+  }
+
+  .sidebar {
+      padding: 10px;
+  }
+
+  .sidebar li {
+      padding: 6px;
+      font-size: 12px;
+  }
+
+  .details {
+      padding: 5px;
+  }
+
+  .title1 {
+      font-size: 14px;
+  }
+
+  .duration {
+      font-size: 10px;
+  }
+
+  .card1 {
+      padding: 10px;
+  }
+
+  .company-logo {
+      width: 40px;
+      height: 30px;
+  }
+}
